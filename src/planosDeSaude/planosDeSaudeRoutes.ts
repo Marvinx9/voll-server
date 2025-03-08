@@ -1,10 +1,10 @@
-import { Router } from 'express'
-import { planosDeSaudeGet } from './planosDeSaudeController.js'
+import { Router } from "express";
+import { planosDeSaudeGet } from "./planosDeSaudeController.js";
 
-export const planosDeSaudeRouter = Router()
+export const planosDeSaudeRouter = Router();
 
-planosDeSaudeRouter.get('/', planosDeSaudeGet)
+planosDeSaudeRouter.get("/", planosDeSaudeGet);
 
 export default (app) => {
-  app.use('/planosdesaude', planosDeSaudeRouter)
-}
+  app.use("/planosdesaude", planosDeSaudeRouter);
+};
